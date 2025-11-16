@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hands On Day 20</title>
+    <meta
+      name="description"
+      content="Tes warna, grid multiple row, flex, dan hover transition dari Tailwind config Kakaes."
+    />
+
+    <!-- Icon Material -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              kakaes: {
+                brown: "#3b2f2f",
+                cream: "#f5f0ea",
+                gold: "#c4a47f",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="font-sans antialiased text-kakaes-brown bg-black overflow-x-hidden"
+  >
+    <!-- Header -->
+    <header class="sticky top-0 z-50 p-6 shadow-md relative z-10 bg-black/70">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <span class="text-xl text-white font-bold uppercase tracking-widest">
+          Dinetflix
+        </span>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="pricing.html"
+            class="text-white hover:underline transition-colors"
+            >Pricing</a
+          >
+          <button
+            class="bg-[#e50914] hover:bg-red-800 text-white px-4 py-2 rounded-md text-sm transition"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative w-full h-[70vh] bg-cover bg-center"
+      style="background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/e94073b0-a056-402f-9015-16cb1e7e45c2/web/ID-en-20251110-TRIFECTA-perspective_29287120-1497-47a9-8b0a-49e7ded22f31_large.jpg');"
+    >
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+
+      <div
+        class="relative z-10 text-white text-center max-w-2xl mx-auto flex flex-col items-center justify-center h-full"
+      >
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          Unlimited movies, TV shows, and more
+        </h1>
+        <p class="mt-4 text-lg font-semibold">
+          Starts at IDR 54,000. Cancel anytime.
+        </p>
+        <p class="mt-2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <input
+            type="text"
+            class="text-white bg-black/60 border border-gray-600 rounded-md px-4 py-2 w-[300px] sm:w-[400px] outline-none"
+            placeholder="Email Address"
+          />
+          <button
+            class="bg-[#e50914] px-6 py-2 rounded-md text-lg hover:bg-red-800 transition transform hover:scale-105"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="mt-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-white font-bold text-2xl mb-6">Trending Now</h2>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center"
+        >
+          <!-- Card -->
+          <div class="relative">
+            <span
+              class="absolute text-white text-[80px] font-bold bottom-0 left-2"
+              >1</span
+            >
+            <img
+              class="rounded-md w-[180px] object-cover"
+              src="https://occ-0-6701-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABafNfNBnPzbvBbw4GnTFZkDiSL1qzru82NeNh8Jx0b7RhG4ChsUTw26xC_s_gksZ7hpK-a8HHnnnWdDftAqu3-ijJYzP4XdD7J3916ZX3YmiXp7DUBvgvxcRHnZSnw7ndDsa.webp?r=3e2"
+            />
+          </div>
+
+          <div class="relative">
+            <span
+              class="absolute text-white text-[80px] font-bold bottom-0 left-2"
+              >2</span
+            >
+            <img
+              class="rounded-md w-[180px] object-cover"
+              src="https://occ-0-6701-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbXI606jVtcDmU4XBGc5g5q_Y92lOMaGDLDpap7tSvPVH6trAAVlFJwgYO3ugLqmDY_JB-8AscFlSWEpolLrGZZku3m3VNAwSD4.webp?r=f6f"
+            />
+          </div>
+
+          <div class="relative">
+            <span
+              class="absolute text-white text-[80px] font-bold bottom-0 left-2"
+              >3</span
+            >
+            <img
+              class="rounded-md w-[180px] object-cover"
+              src="https://occ-0-6701-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABd5bhENZ3IOA1TC0_CR2jCeOGtQ_txcvcv3jDkVl7Bq5LW5HnGbg5MUu-xj20_smYWxPbLudPSaYc-mrHAUm654HvzUi2cOYejc.webp?r=dd4"
+            />
+          </div>
+
+          <div class="relative">
+            <span
+              class="absolute text-white text-[80px] font-bold bottom-0 left-2"
+              >4</span
+            >
+            <img
+              class="rounded-md w-[180px] object-cover"
+              src="https://occ-0-6701-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABclG4ByVbhU3FJCtDLL2hYuThOW8rWiQ3IUzrbxbDOuWBJTygneiX3a5Zyt4lg9dfpU03CiUUuPSuwXwespcgp20PGn2Bkmr8hA.webp?r=67b"
+            />
+          </div>
+
+          <div class="relative">
+            <span
+              class="absolute text-white text-[80px] font-bold bottom-0 left-2"
+              >5</span
+            >
+            <img
+              class="rounded-md w-[180px] object-cover"
+              src="https://occ-0-6701-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABagvBTwaRK7dUvgLiZ2vFKnFwwQeV_sGrR2w8HdJ0yjajyhoKXcGmMoMpfRIJNI94BAmlXkrBdLYkA5hVu-vEMlmOZekB73KsEU.webp?r=c8e"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="mt-20 px-6 pb-20">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-white font-bold text-2xl mb-6">Watch Anywhere</h2>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white place-items-stretch"
+        >
+          <div
+            class="bg-gradient-to-r from-violet-600 to-indigo-600 rounded-md p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">Enjoy on your TV</h3>
+            <p>
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </p>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-red-600 to-orange-600 rounded-md p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">Download and Go</h3>
+            <p>
+              Save your favorites easily and always have something to watch.
+            </p>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">Watch Everywhere</h3>
+            <p>Stream on phones, tablets, laptops, and TVs without limits.</p>
+          </div>
+
+          <div
+            class="bg-gradient-to-r from-pink-500 to-rose-600 rounded-md p-6"
+          >
+            <h3 class="text-xl font-bold mb-2">Create Profiles for Kids</h3>
+            <p>
+              Send kids on adventures with their favorite characters — in a
+              space made just for them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
