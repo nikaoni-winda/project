@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Starts Here, OPHELÌA</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Playfair Display"', "serif"],
+              arial: ["Arial", "Helvetica", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="m-0">
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 md:px-8 py-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between text-sm"
+      >
+        <!-- Left nav -->
+        <div
+          class="flex flex-wrap justify-center md:justify-start gap-3 md:gap-6 font-arial text-xs sm:text-sm"
+        >
+          <a href="shop.html" class="hover:text-gray-400">SHOP</a>
+          <a href="shop.html" class="hover:text-gray-400">TRENDING</a>
+          <a href="contact.html" class="hover:text-gray-400">NEED HELP?</a>
+        </div>
+
+        <!-- Logo -->
+        <div
+          class="logo text-2xl sm:text-3xl md:text-[30px] font-bold text-[#641114] text-center md:text-left"
+        >
+          <a href="index.html">O P H E L Ì A</a>
+        </div>
+
+        <!-- Right nav -->
+        <div
+          class="flex flex-wrap justify-center md:justify-end items-center gap-3 md:gap-6 font-arial text-xs sm:text-sm"
+        >
+          <a href="#" class="flex items-center gap-1 hover:text-gray-400">
+            ENGLISH<i data-feather="chevron-down" class="w-3 h-3"></i>
+          </a>
+          <a href="#" class="flex items-center hover:text-gray-400">
+            ACCOUNT
+          </a>
+          <a href="#" class="hover:text-gray-400 flex items-center">
+            <i data-feather="shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-20 bg-[#FBE9EA] w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="flex flex-col justify-center px-10 lg:px-20 py-12 md:py-16 order-2 md:order-1">
+          <p class="text-sm mb-2 text-[#641114]">
+            <i>Your new #SKINSAVER</i>
+          </p>
+
+          <h1
+            class="text-[40px] lg:text-[46px] leading-tight text-[#641114] font-bold mb-4"
+          >
+            One step ahead to <br />
+            <span class="italic font-extrabold">glass skin</span> with our new
+            release!
+          </h1>
+
+          <p class="mb-8 max-w-md text-[15px] leading-relaxed">
+            A formula crafted with rare, skin-loving actives that bring out your
+            natural radiance.
+          </p>
+
+          <button
+            class="bg-[#641114] rounded-full py-2 px-8 text-white text-sm hover:bg-[#E77377] transition-transform duration-150 active:scale-95 w-fit"
+          >
+            Get it Now!
+          </button>
+        </div>
+
+        <div class="relative min-h-[320px] md:min-h-[380px] lg:min-h-[420px] order-1 md:order-2">
+          <img
+            src="skincare-set2.jpg"
+            class="absolute inset-0 w-full h-full object-cover object-center"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <div class="flex justify-between items-center p-10 pt-20">
+        <h2 class="font-bold text-[#641114] text-[40px] lg:text-[46px]">All Products</h2>
+      </div>
+
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 px-10 py-6"
+      >
+      <!-- CARD 1 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare1.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Facial Cream</p>
+              <p class="text-center">$20.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare4.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Collagen Cream</p>
+              <p class="text-center">$22.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 3 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare6.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Facial Toner</p>
+              <p class="text-center">$18.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 4 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare5.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Makeup Serum</p>
+              <p class="text-center">$42.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 5 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare3.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Tone-Up Cream</p>
+              <p class="text-center">$25.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 6 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare2.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Skin Cleanser</p>
+              <p class="text-center">$28.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 7 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare7.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Lip Butter Balm</p>
+              <p class="text-center">$10.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 8 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare8.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Firm Serum</p>
+              <p class="text-center">$30.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 9 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare9.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Eye Cream</p>
+              <p class="text-center">$36.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 10 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare10.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Collagen Essence</p>
+              <p class="text-center">$28.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 11 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare11.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Facial Wash</p>
+              <p class="text-center">$16.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 12 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare12.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Retinol Serum</p>
+              <p class="text-center">$48.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 13 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare13.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Ceramide Moisturizer</p>
+              <p class="text-center">$34.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 14 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare14.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Setting Spray</p>
+              <p class="text-center">$17.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 15 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare15.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Night Serum</p>
+              <p class="text-center">$40.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 16 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare16.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Sunscreen</p>
+              <p class="text-center">$26.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 17 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare17.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA AHA BHA Serum</p>
+              <p class="text-center">$31.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 18 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare18.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Basic Skincare Set</p>
+              <p class="text-center">$50.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 19 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare19.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Makeup Primer</p>
+              <p class="text-center">$20.00</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 20 -->
+        <a href="#" class="group block">
+          <div class="product-card">
+            <div
+              class="relative h-64 rounded-xl overflow-hidden bg-[url('skincare20.jpg')] bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
+            >
+              <i data-feather="shopping-cart" class="m-3 text-[#641114] hover:text-[#E77377]"></i>
+            </div>
+            <div class="product-info">
+              <p class="my-1 text-center">OPHELÌA Clay Mask</p>
+              <p class="text-center">$19.00</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+   <!-- FOOTER -->
+    <footer class="bg-[#FBE9EA] text-[#641114] mt-10">
+      <div
+        class="max-w-6xl mx-auto px-6 sm:px-10 md:px-24 pt-10 md:pt-12 pb-10 md:pb-20 flex flex-col xl:flex-row gap-10 xl:gap-16"
+      >
+        <!-- Footer links -->
+        <div
+          class="flex flex-col sm:flex-row gap-8 sm:gap-12 md:gap-16 w-full md:w-auto"
+        >
+          <div class="flex flex-col min-w-[140px]">
+            <a href="#" class="mb-3 text-lg sm:text-[20px] hover:text-[#E77377]"
+              ><h3>Company</h3></a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >About Us</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Careers</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Store Location</a
+            >
+          </div>
+
+          <div class="flex flex-col min-w-[140px]">
+            <a href="#" class="mb-3 text-lg sm:text-[20px] hover:text-[#E77377]"
+              ><h3>Connect</h3></a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Contact Us</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Instagram</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Tik Tok</a
+            >
+          </div>
+
+          <div class="flex flex-col min-w-[160px]">
+            <a href="#" class="mb-3 text-lg sm:text-[20px] hover:text-[#E77377]"
+              >Customer Care</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >FAQ</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Return &amp; Refund Policy</a
+            >
+            <a href="#" class="my-1 text-sm sm:text-base hover:text-[#E77377]"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="flex-1">
+          <h3 class="text-lg sm:text-[20px] mb-4 sm:mb-5">
+            Unlock What's Next
+          </h3>
+          <p class="mb-4 text-sm sm:text-base">
+            Subscribe and unlock insider news, exclusive promos, and everything
+            we create for your outstanding beauty.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
+          >
+            <input
+              type="text"
+              placeholder="Email Address"
+              class="w-full h-10 px-4 border border-gray-300 rounded-full text-sm placeholder-gray-400 focus:outline-none focus:border-[#641114]"
+            />
+
+            <button
+              class="border border-gray-300 rounded-full h-10 px-6 whitespace-nowrap text-sm text-[#641114] hover:bg-[#641114] hover:text-white transition duration-200 active:scale-95"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
